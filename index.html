@@ -27,7 +27,7 @@
           >
           <ul class="header-list list">
             <li class="header-item current">
-              <a href="./index.html" class="header-link link">Студія</a>
+              <a href="./index.html" class="header-link current link">Студія</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="header-link link">Портфоліо</a>
@@ -62,8 +62,8 @@
     <main>
       <section class="hero">
         <div class="wrapper-hero container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button hero-btn-text">
+          <h1 class="hero-title" data-aos="fade-right">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-button hero-btn-text" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -441,5 +441,16 @@
       </div>
     </div>
     </footer>
+
+    <!-- Modal -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal"><button type="button" class="close-button" data-modal-close><svg class="icon-close">
+        <use href="./img/sprite.svg#icon-close-button"></use>
+      </svg></button></div>
+      
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
