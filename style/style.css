@@ -709,7 +709,8 @@ a {
   border-top: none;
 }
 
-.content-list:hover .projects-details {
+.content-list:hover .projects-details,
+.content-list:focus-within .projects-details {
   transform: translateY(0);
 }
 
