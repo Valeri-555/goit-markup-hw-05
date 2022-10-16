@@ -215,6 +215,7 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -222,8 +223,6 @@ body {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: fill 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .hero-btn-text {
@@ -412,7 +411,7 @@ body {
   height: 44px;
   align-items: center;
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:focus,
@@ -507,14 +506,14 @@ body {
 .icon-logo:hover,
 .icon-logo:focus {
   fill: var(--accent-color);
-  transition: fill 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+  
 }
 
 .icon-logo {
   height: 92px;
   width: 106px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-icon {
@@ -564,6 +563,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address {
@@ -578,6 +578,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-in {
@@ -598,14 +599,13 @@ body {
   height: 44px;
   align-items: center;
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-link:focus,
 .join-link:hover {
   background-color: var(--accent-color);
   fill: #ffffff;
-  transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .item-svg {
@@ -751,6 +751,12 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+  
+}
+
+
 .modal {
   width: 528px;
   height: 581px;
@@ -761,10 +767,7 @@ body {
   background: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  
 }
 
 .is-hidden {
