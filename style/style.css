@@ -697,7 +697,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.img {
+.img-portflio {
   display: block;
   max-width: 100%;
 }
